@@ -1,16 +1,15 @@
 #================Functions================#
 function fish_greeting
-    clear;fastfetch -l linux
+    echo -e "\e[33m$(uname -n | figlet)\e[0m";fastfetch
 end
 #=========================================#
 
 
 #================Alias================#
-alias clr='clear;fastfetch -l linux'
+alias clr='clear;echo -e "\e[33m$(uname -n | figlet)\e[0m";fastfetch'
 alias ls="ls -a"
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)' # Cleanup orphaned packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl" # Sort installed packages by recently installed using expac
-alias big="expac -H M '%m\t%n' | sort -h | nl" # Sort installed packages by size using expac
+alias yazi="sudo yazi"
+alias ff="fastfetch"
 #=====================================#
 
 
