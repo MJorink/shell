@@ -1,16 +1,21 @@
 #================Functions================#
 function fish_greeting
-    echo -e "\e[33m$(uname -n | figlet)\e[0m";fastfetch
+    ~/.scripts/greeting.sh
 end
 #=========================================#
 
 
 #================Alias================#
-alias clr='clear;echo -e "\e[33m$(uname -n | figlet)\e[0m";fastfetch'
+alias clr='clear;~/.scripts/greeting.sh'
 alias ls="ls -a"
 alias yazi="sudo yazi"
-alias ff="fastfetch"
 #=====================================#
+
+
+#================Variables================#
+set -gx EDITOR micro
+set -gx VISUAL micro
+#=========================================#
 
 
 #================Prompt================#
