@@ -1,5 +1,4 @@
-echo -e "\e[33m$(uname -n | figlet)\e[0m"
-uptime -p;echo ""
+echo -e "\e[35m$(uname -n | figlet -f slant)\e[0m"
 echo "Kernel:"
-echo -e "\e[33m$(uname -r)\e[0m";echo ""
-~/.scripts/system-age-info.sh age
+echo -e "\e[35m$(uname -r)\e[0m";echo ""
+~/.scripts/system-age-info.sh counted
