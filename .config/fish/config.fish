@@ -1,6 +1,16 @@
+#================Startup================#
+if status is-login
+    if string match -q '/dev/tty*' (tty)
+        ~/.scripts/startup.sh
+    end
+end
+#=======================================#
+
 #================Functions================#
 function fish_greeting
+    if not status is-login
     ~/.scripts/greeting.sh
+    end
 end
 #=========================================#
 
