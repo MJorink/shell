@@ -9,7 +9,7 @@ end
 #================Functions================#
 function fish_greeting
     if not status is-login
-    ~/.scripts/greeting.sh
+        ~/.scripts/greeting.sh
     end
 end
 #=========================================#
@@ -19,6 +19,8 @@ end
 alias clr='clear;~/.scripts/greeting.sh'
 alias ls="ls -a"
 alias yazi="sudo yazi"
+
+alias unmerge="sudo emerge --unmerge --ask --ignore-default-opts"
 #=====================================#
 
 
