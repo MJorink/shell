@@ -1,7 +1,7 @@
 #================Startup================#
 if status is-login
     if string match -q '/dev/tty*' (tty)
-        ~/.scripts/startup.sh
+        dbus-run-session mango
     end
 end
 #=======================================#
